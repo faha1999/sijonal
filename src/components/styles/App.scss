@@ -1,3 +1,11 @@
-@use 'variables' as *;
-@use 'base' as *;
-@use 'globals' as *;
+// util
+@import './util/variables';
+
+// base
+@import './base/base';
+
+// layout
+@import './layout/globals';
+
+// common
+@import './common/header';
