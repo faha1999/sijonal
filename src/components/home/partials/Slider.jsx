@@ -9,6 +9,7 @@ export const Slider = () => {
       <section className="homeSlide contentWidth">
         <div className="container">
           <Swiper
+            className="mySwiper"
             loop={true}
             pagination={{
               clickable: true,
