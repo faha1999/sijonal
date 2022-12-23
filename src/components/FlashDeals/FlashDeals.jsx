@@ -2,7 +2,7 @@ import React from 'react';
 import { TiFlash } from 'react-icons/ti';
 import { FlashCard } from './FlashCard';
 
-export const FlashDeals = () => {
+export const FlashDeals = ({ CartItem }) => {
   return (
     <>
       <section className="flash">
@@ -11,7 +11,7 @@ export const FlashDeals = () => {
             <TiFlash style={{ color: '#fa6a27', margin: '.625rem' }} />
             <h1>Flash Delas</h1>
           </div>
-          <FlashCard />
+          <FlashCard CartItem={CartItem} />
         </div>
       </section>
     </>

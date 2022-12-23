@@ -5,7 +5,7 @@ import { BsSearch } from 'react-icons/bs';
 import { FaUserAlt } from 'react-icons/fa';
 import { HiShoppingBag } from 'react-icons/hi';
 
-export const Search = () => {
+export const Search = ({ CartItem }) => {
   window.addEventListener('scroll', function () {
     const search = document.querySelector('.search');
     search.classList.toggle('active', window.scrollY > 100);
@@ -34,7 +34,7 @@ export const Search = () => {
                 <div className="icon-circle">
                   <HiShoppingBag />
                 </div>
-                <span>0</span>
+                <span>{CartItem.length === 0 ? '' : CartItem.length}</span>
               </Link>
             </div>
           </div>

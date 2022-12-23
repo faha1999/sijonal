@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper';
-import { flashData } from '../../data/flashData';
 import { AiFillHeart, AiFillStar, AiOutlinePlus } from 'react-icons/ai';
 
-export const FlashCard = ({ addToCart }) => {
+export const FlashCard = ({ flashData, addToCart }) => {
   const [count, setCount] = useState(0);
   const increment = () => {
     setCount(count + 1);
@@ -25,19 +24,19 @@ export const FlashCard = ({ addToCart }) => {
           disableOnInteraction: false,
         }}
       >
-        {flashData.map((data) => (
-          <SwiperSlide className="box">
+        {flashData.map((flashData) => (
+          <SwiperSlide className="box" key={flashData.id}>
             <div className="product mtop">
               <div className="img">
-                <span className="discount">{data.discount}% Off</span>
-                <img src={data.cover} alt={data.name} />
+                <span className="discount">{flashData.discount}% Off</span>
+                <img src={flashData.cover} alt={flashData.name} />
                 <div className="product-like">
                   <label>{count}</label> <br />
                   <AiFillHeart onClick={increment} />
                 </div>
               </div>
               <div className="product-details">
-                <h3>{data.name}</h3>
+                <h3>{flashData.name}</h3>
                 <div className="rate">
                   <AiFillStar />
                   <AiFillStar />
@@ -46,9 +45,9 @@ export const FlashCard = ({ addToCart }) => {
                   <AiFillStar />
                 </div>
                 <div className="price">
-                  <h4>${data.price}.00 </h4>
+                  <h4>${flashData.price}.00 </h4>
 
-                  <button onClick={() => addToCart(data)}>
+                  <button onClick={() => addToCart(flashData)}>
                     <AiOutlinePlus />
                   </button>
                 </div>
