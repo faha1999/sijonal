@@ -26,6 +26,22 @@ export const App = () => {
     }
   };
 
+  const decreaseQty = (product) => {
+    const productExit = CartItem.find((item) => item.id === product.id);
+
+    if (productExit.qty === 1) {
+      setCartItem(CartItem.filter((item) => item.id !== product.id));
+    } else {
+      setCartItem(
+        CartItem.map((item) =>
+          item.id === product.id
+            ? { ...productExit, qty: productExit.qty - 1 }
+            : item,
+        ),
+      );
+    }
+  };
+
   return (
     <>
       <BrowserRouter>
@@ -37,7 +53,13 @@ export const App = () => {
           />
           <Route
             path="/cart"
-            element={<Cart CartItem={CartItem} addToCart={addToCart} />}
+            element={
+              <Cart
+                CartItem={CartItem}
+                addToCart={addToCart}
+                decreaseQty={decreaseQty}
+              />
+            }
           />
         </Routes>
       </BrowserRouter>

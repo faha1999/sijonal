@@ -1,7 +1,11 @@
 import React from 'react';
-import { AiOutlineClose, AiOutlinePlus } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 
-export const Cart = ({ CartItem, addToCart }) => {
+export const Cart = ({ CartItem, addToCart, decreaseQty }) => {
+  const totalPrice = CartItem.reduce(
+    (price, item) => price + item.qty * item.price,
+    0,
+  );
   return (
     <>
       <section className="cart-items">
@@ -40,6 +44,13 @@ export const Cart = ({ CartItem, addToCart }) => {
                       >
                         <AiOutlinePlus />
                       </button>
+
+                      <button
+                        className="desCart"
+                        onClick={() => decreaseQty(item)}
+                      >
+                        <AiOutlineMinus />
+                      </button>
                     </div>
                   </div>
 
@@ -47,6 +58,14 @@ export const Cart = ({ CartItem, addToCart }) => {
                 </div>
               );
             })}
+          </div>
+
+          <div className="cart-total product">
+            <h2>Cart Summary</h2>
+            <div className="d_flex">
+              <h4>Total Price :</h4>
+              <h3>${totalPrice}.00</h3>
+            </div>
           </div>
         </div>
       </section>
