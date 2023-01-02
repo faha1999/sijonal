@@ -1,6 +1,7 @@
 import React from 'react';
 import { FlashDeals } from '../components/FlashDeals/FlashDeals';
 import { Home } from '../components/home/Home';
+import { NewArrivals } from '../components/newArrivals/NewArrivals';
 import { TopCategories } from '../components/topCategories/TopCategories';
 
 export const MainPage = ({ flashData, addToCart, CartItem }) => {
@@ -9,6 +10,7 @@ export const MainPage = ({ flashData, addToCart, CartItem }) => {
       <Home CartItem={CartItem} />
       <FlashDeals flashData={flashData} addToCart={addToCart} />
       <TopCategories />
+      <NewArrivals />
     </>
   );
 };
