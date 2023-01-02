@@ -4,9 +4,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MainPage } from './pages/MainPage';
 import { Data } from './data/Data';
 import { Cart } from './Common/cart/Cart';
+import { shopData } from './data/shopData';
 
 export const App = () => {
   const { flashData } = Data;
+  const { shopItems } = shopData;
 
   const [CartItem, setCartItem] = useState([]);
 
@@ -49,7 +51,13 @@ export const App = () => {
         <Routes>
           <Route
             path="/"
-            element={<MainPage flashData={flashData} addToCart={addToCart} />}
+            element={
+              <MainPage
+                flashData={flashData}
+                addToCart={addToCart}
+                shopItems={shopItems}
+              />
+            }
           />
           <Route
             path="/cart"
