@@ -1,4 +1,5 @@
 import React from 'react';
+import { Announcement } from '../components/Announcement/Announcement';
 import { Discount } from '../components/Discount/Discount';
 import { FlashDeals } from '../components/FlashDeals/FlashDeals';
 import { Home } from '../components/home/Home';
@@ -15,6 +16,7 @@ export const MainPage = ({ flashData, addToCart, CartItem, shopItems }) => {
       <NewArrivals />
       <Discount />
       <Shop shopItems={shopItems} addToCart={addToCart} />
+      <Announcement />
     </>
   );
 };
