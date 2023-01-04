@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper';
+import { Autoplay, Navigation } from 'swiper';
 import { AiFillHeart, AiFillStar, AiOutlinePlus } from 'react-icons/ai';
 
 export const FlashCard = ({ flashData, addToCart }) => {
@@ -14,11 +14,10 @@ export const FlashCard = ({ flashData, addToCart }) => {
         slidesPerView={4}
         spaceBetween={10}
         className="mySwiper"
+        //centeredSlides={true}
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Autoplay, Pagination]}
+        navigation={true}
+        modules={[Autoplay, Navigation]}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
