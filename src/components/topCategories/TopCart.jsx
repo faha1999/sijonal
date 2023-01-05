@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper';
+import { Autoplay, Navigation } from 'swiper';
 import { topCartData } from '../../data/topCartData';
 
 export const TopCart = () => {
@@ -10,13 +10,12 @@ export const TopCart = () => {
         slidesPerView={3}
         spaceBetween={10}
         className="mySwiper"
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Autoplay, Pagination]}
+        //centeredSlides={true}
+        loop={false}
+        navigation={true}
+        modules={[Autoplay, Navigation]}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
       >

@@ -15,7 +15,7 @@ export const FlashCard = ({ flashData, addToCart }) => {
         spaceBetween={10}
         className="mySwiper"
         //centeredSlides={true}
-        loop={true}
+        loop={false}
         navigation={true}
         modules={[Autoplay, Navigation]}
         autoplay={{
