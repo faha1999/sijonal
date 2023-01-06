@@ -57,6 +57,9 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
+        <div style={{ textAlign: 'center', marginTop: '2rem', opacity: '.4' }}>
+          &copy; sijonal.com {new Date().getFullYear()} All right reserved.
+        </div>
       </footer>
     </>
   );

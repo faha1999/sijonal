@@ -1,5 +1,6 @@
 import React from 'react';
 import { BsEnvelopeFill, BsFillTelephoneFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 export const TopBar = () => {
   return (
@@ -8,18 +9,18 @@ export const TopBar = () => {
         <div className="container d_flex">
           <div className="left row">
             <BsFillTelephoneFill />
-            <label>+10012 0000 0000</label>
+            <Link href="tel:+10012 0000 0000">+10012 0000 0000</Link>
             <BsEnvelopeFill />
-            <label>hello@sijonal.com </label>
+            <Link href="mailto:hello@sijonal.com">hello@sijonal.com</Link>
           </div>
 
           <div className="right row RText">
-            <label>FAQ"s</label>
-            <label>Need Help?</label>
+            <Link>FAQ"s</Link>
+            <Link>Need Help?</Link>
             <span>🇺🇸</span>
-            <label>EN</label>
+            <Link>EN</Link>
             <span>🇺🇸</span>
-            <label>USD</label>
+            <Link>USD</Link>
           </div>
         </div>
       </section>

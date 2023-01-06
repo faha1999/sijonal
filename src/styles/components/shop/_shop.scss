@@ -14,18 +14,15 @@
       text-align: center;
       font-size: 1.0625rem;
       font-weight: 500;
+
+      &:hover {
+        color: $orange;
+      }
     }
     .chead {
       h1 {
         font-size: 1.25rem;
         margin-bottom: 1.25rem;
-      }
-
-      hr {
-        width: 0.215rem;
-        height: 2rem;
-        background: $gray;
-        opacity: 0.6;
       }
     }
 
