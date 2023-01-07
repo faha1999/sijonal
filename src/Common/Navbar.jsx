@@ -42,7 +42,7 @@ export const Navbar = () => {
                 <Link to="/track">track my order</Link>
               </li>
               <li>
-                <Link to="/contact">contact</Link>
+                <Link to="/contact-us">contact</Link>
               </li>
             </ul>
 

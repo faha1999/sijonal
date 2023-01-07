@@ -1,0 +1,36 @@
+.contact {
+  padding: 1.2rem 0;
+
+  p {
+    padding-top: 1rem;
+  }
+  .contact_img {
+    text-align: center;
+
+    img {
+      height: auto;
+    }
+  }
+}
+
+.familyDetails {
+  .card {
+    background: $offWhiteLight;
+    text-align: center;
+    width: 13.5rem;
+    margin-top: 1rem;
+
+    svg {
+      font-size: 5rem;
+      color: $orange;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      padding-bottom: 0.6rem;
+      color: $gray;
+    }
+  }
+}

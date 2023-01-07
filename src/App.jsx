@@ -6,6 +6,7 @@ import { Data } from './data/Data';
 import { Cart } from './Common/cart/Cart';
 import { shopData } from './data/shopData';
 import { Footer } from './Common/footer/Footer';
+import { Contact } from './pages/Contact';
 
 export const App = () => {
   const { flashData } = Data;
@@ -70,6 +71,8 @@ export const App = () => {
               />
             }
           />
+
+          <Route path="/contact-us" element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>
