@@ -58,6 +58,23 @@ export const Contact = () => {
                 ))}
               </div>
             </div>
+
+            <div className="contactUs">
+              <h1>Always Here for You</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quidem beatae dolorem reprehenderit dolor tempora
+                veniam eius, minima provident error!
+              </p>
+              <h3>
+                Call our customer service hotline at{' '}
+                <a href="tel:+11111">11111</a>
+              </h3>
+              <h3>
+                Email us at{' '}
+                <a href="mailto:hello@sijonal.com">hello@sijonal.com</a>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
