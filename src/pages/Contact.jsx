@@ -49,8 +49,8 @@ export const Contact = () => {
               </p>
 
               <div className="familyDetails d_flex">
-                {contactData.map((data) => (
-                  <div className="card">
+                {contactData.map((data, index) => (
+                  <div className="card" key={index}>
                     {data.img}
                     <h3>{data.date}</h3>
                     <h3>{data.title}</h3>

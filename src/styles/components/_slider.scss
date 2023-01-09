@@ -17,3 +17,14 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .contentWidth {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contentWidth {
+    width: 100%;
+  }
+}
