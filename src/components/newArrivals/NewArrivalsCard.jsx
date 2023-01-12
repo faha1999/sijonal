@@ -7,13 +7,27 @@ export const NewArrivalsCard = () => {
   return (
     <>
       <Swiper
-        slidesPerView={4}
+        //slidesPerView={4}
         spaceBetween={10}
         loop={true}
         pagination={{
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            //spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            //spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            //spaceBetween: 30,
+          },
+        }}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
