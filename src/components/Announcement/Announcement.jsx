@@ -5,7 +5,7 @@ import Announcement2 from '../../assets/Announcement/banner-2.png';
 export const Announcement = () => {
   return (
     <>
-      <section className="annocument background">
+      <section className="announcement background">
         <div className="container d_flex">
           <div className="img" style={{ width: '30%', height: '21.25rem' }}>
             <img
