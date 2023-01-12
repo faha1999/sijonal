@@ -1,7 +1,7 @@
-import slider1 from '../assets/flash/slide-1.png';
-import slider2 from '../assets/flash/slide-2.png';
-import slider3 from '../assets/flash/slide-3.png';
-import slider4 from '../assets/flash/slide-4.png';
+import slider1 from '../assets/flash/jacket-6.png';
+import slider2 from '../assets/flash/jewellery-3.png';
+import slider3 from '../assets/flash/watch-2.png';
+import slider4 from '../assets/flash/watch-3.png';
 
 export const Data = {
   flashData: [

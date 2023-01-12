@@ -1,7 +1,7 @@
-import slider1 from '../assets/Slider/slide-1.png';
-import slider2 from '../assets/Slider/slide-2.png';
-import slider3 from '../assets/Slider/slide-3.png';
-import slider4 from '../assets/Slider/slide-4.png';
+import slider1 from '../assets/Slider/belt.jpg';
+import slider2 from '../assets/Slider/jewellery-3.jpg';
+import slider3 from '../assets/Slider/watch-1.jpg';
+import slider4 from '../assets/Slider/watch-4.jpg';
 
 export const sliderData = [
   {

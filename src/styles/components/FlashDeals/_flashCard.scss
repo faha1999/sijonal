@@ -5,14 +5,14 @@
   border-radius: 0.5rem;
   box-shadow: rgb(3 0 71 / 9%) 0rem 0.0625rem 0.1875rem;
   margin: 0.625rem;
-  height: 23rem; //need to remove after resize images
 
   &:hover .product-like {
     opacity: 1;
   }
 
   img {
-    height: 15rem; //need to remove after resize images
+    width: 100%;
+    text-align: center;
   }
 
   h3 {

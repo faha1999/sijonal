@@ -16,7 +16,9 @@ export const Search = ({ CartItem }) => {
       <section className="search">
         <div className="container c_flex">
           <div className="logo width">
-            <img src={logo} alt="sijonal" />
+            <Link to="/">
+              <img src={logo} alt="sijonal" />
+            </Link>
           </div>
 
           <div className="search-box f_flex">
