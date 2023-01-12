@@ -48,6 +48,16 @@
     img {
       width: 20rem;
     }
+
+    .d_flex {
+      flex-direction: column;
+    }
+
+    .familyDetails {
+      .card {
+        width: 100%;
+      }
+    }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
