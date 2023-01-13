@@ -24,7 +24,7 @@ export const Search = ({ CartItem }) => {
           <div className="search-box f_flex">
             <BsSearch />
             <input type="text" placeholder="Search and hit enter..." />
-            <span>All Category</span>
+            <span>category's</span>
           </div>
 
           <div className="icon f_flex width">

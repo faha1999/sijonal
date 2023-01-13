@@ -1,4 +1,4 @@
-header {
+.header {
   height: 8vh;
   box-shadow: -0.0625rem 0.9375rem 1.0625rem -0.5rem rgba(0, 0, 0, 0.1);
 
@@ -47,7 +47,7 @@ header {
 }
 
 @media (max-width: 48rem) {
-  header {
+  .header {
     &.active {
       height: 10vh;
     }
@@ -80,6 +80,10 @@ header {
     height: 100vh;
     background-color: $white;
     z-index: 888;
+  }
+
+  .open {
+    top: 11rem !important;
   }
 
   .close,

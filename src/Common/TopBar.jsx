@@ -9,7 +9,7 @@ export const TopBar = () => {
         <div className="container d_flex">
           <div className="left row">
             <BsFillTelephoneFill />
-            <a href="tel:+4733378901">+10012 0000 0000</a>
+            <a href="tel:+100120000000">+10012 0000 0000</a>
             <BsEnvelopeFill />
             <a href="mailto:hello@sijonal.com">hello@sijonal.com</a>
           </div>
