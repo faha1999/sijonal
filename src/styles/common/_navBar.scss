@@ -48,9 +48,7 @@
 
 @media (max-width: 48rem) {
   .header {
-    &.active {
-      height: 10vh;
-    }
+    height: 3vh;
 
     ul {
       padding-top: 1.875rem;
@@ -82,27 +80,31 @@
     z-index: 888;
   }
 
-  .close,
-  .open {
-    position: absolute;
-    top: 2.1875rem;
-    right: 1.25rem;
-    color: green;
-    display: block;
-    font-size: 1.5625rem;
-    z-index: 999;
+  .catgrories {
+    display: none;
   }
-  .close {
-    right: 45%;
 
-    &.home-btn {
-      background: linear-gradient(145deg, #e2e8ec, #ffffff);
-      color: $orange;
-      border-radius: 50%;
-      padding: 0;
-      width: 3.75rem;
-      height: 3.75rem;
-      line-height: 3.75rem;
-    }
-  }
+  // .close,
+  // .open {
+  //   position: absolute;
+  //   top: 2.1875rem;
+  //   right: 1.25rem;
+  //   color: green;
+  //   display: block;
+  //   font-size: 1.5625rem;
+  //   z-index: 999;
+  // }
+  // .close {
+  //   right: 45%;
+
+  //   &.home-btn {
+  //     background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  //     color: $orange;
+  //     border-radius: 50%;
+  //     padding: 0;
+  //     width: 3.75rem;
+  //     height: 3.75rem;
+  //     line-height: 3.75rem;
+  //   }
+  // }
 }

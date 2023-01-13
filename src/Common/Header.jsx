@@ -8,7 +8,7 @@ export const Header = ({ CartItem }) => {
     <>
       <TopBar />
       <Search CartItem={CartItem} />
-      <Navbar />
+      <Navbar CartItem={CartItem} />
     </>
   );
 };

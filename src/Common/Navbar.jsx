@@ -5,7 +5,7 @@ import { GrClose } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
 import { MobileHeader } from './header/MobileHeader';
 
-export const Navbar = () => {
+export const Navbar = ({ CartItem }) => {
   const [MobileMenu, setMobileMenu] = useState(false);
   return (
     <>
@@ -60,7 +60,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <MobileHeader />
+        <MobileHeader CartItem={CartItem} />
       </header>
     </>
   );

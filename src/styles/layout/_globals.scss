@@ -2,6 +2,10 @@ body {
   background-color: $white;
 }
 
+main {
+  overflow: hidden;
+}
+
 .background {
   background: $offWhite;
   padding: 3.125rem 0;
