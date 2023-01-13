@@ -3,6 +3,7 @@ import { BsChevronDown } from 'react-icons/bs';
 import { FaBars, FaBorderAll } from 'react-icons/fa';
 import { GrClose } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
+import { MobileHeader } from './header/MobileHeader';
 
 export const Navbar = () => {
   const [MobileMenu, setMobileMenu] = useState(false);
@@ -58,6 +59,8 @@ export const Navbar = () => {
             </button>
           </div>
         </div>
+
+        <MobileHeader />
       </header>
     </>
   );
