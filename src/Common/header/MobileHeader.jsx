@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { FaBorderAll } from 'react-icons/fa';
+import React from 'react';
 import { TiHome } from 'react-icons/ti';
 import { Link } from 'react-router-dom';
+import { MobileCategory } from './mobileHeaderPartials/MobileCategory';
 import { Navlink } from './mobileHeaderPartials/Navlink';
 
 export const MobileHeader = () => {
@@ -12,7 +12,7 @@ export const MobileHeader = () => {
         <Link to="/">
           <TiHome />
         </Link>
-        <FaBorderAll />
+        <MobileCategory />
       </div>
     </>
   );

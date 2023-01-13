@@ -40,33 +40,74 @@
       bottom: 0;
     }
 
+    .MobileCategory {
+      list-style: none;
+      box-shadow: rgb(50 50 93 / 23%) 0rem 3.125rem 6.25rem -1.25rem,
+        rgb(0 0 0 / 30%) 0rem 1.875rem 3.75rem -1.875rem;
+      left: 0;
+      transition: all 0.5s ease-in-out;
+      width: 60%;
+      background-color: $white;
+      z-index: 20;
+      position: fixed;
+      height: 100vh;
+      //overflow-y: scroll;
+      bottom: 0;
+    }
+
     .mobileClose {
       background: transparent;
       margin-right: 1rem;
       font-size: 1.5rem;
     }
 
-    .close,
-    .open {
-      position: absolute;
-      top: 2.1875rem;
-      right: 1.25rem;
-      color: green;
-      display: block;
-      font-size: 1.5625rem;
-      z-index: 999;
-    }
-    .close {
-      right: 45%;
+    // .close,
+    // .open {
+    //   position: absolute;
+    //   top: 2.1875rem;
+    //   right: 1.25rem;
+    //   color: green;
+    //   display: block;
+    //   font-size: 1.5625rem;
+    //   z-index: 999;
+    // }
+    // .close {
+    //   right: 45%;
 
-      &.home-btn {
-        background: linear-gradient(145deg, #e2e8ec, #ffffff);
-        color: $orange;
-        border-radius: 50%;
-        padding: 0;
-        width: 3.75rem;
-        height: 3.75rem;
-        line-height: 3.75rem;
+    //   &.home-btn {
+    //     background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    //     color: $orange;
+    //     border-radius: 50%;
+    //     padding: 0;
+    //     width: 3.75rem;
+    //     height: 3.75rem;
+    //     line-height: 3.75rem;
+    //   }
+    // }
+
+    .MobileCategory {
+      padding: 15px 0;
+      //margin-top: 5px;
+
+      .box {
+        transition: 0.5s;
+        padding: 0 20px;
+
+        &:hover {
+          background-color: $orange;
+          cursor: pointer;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+          margin-top: 10px;
+          object-fit: contain;
+        }
+        span {
+          margin: 10px 20px;
+          text-transform: capitalize;
+        }
       }
     }
   }
