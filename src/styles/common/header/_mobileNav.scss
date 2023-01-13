@@ -101,3 +101,15 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mobileNav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobileNav {
+    display: none;
+  }
+}
