@@ -1,11 +1,16 @@
 import React from 'react';
 import { AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 
-export const Cart = ({ CartItem, addToCart, decreaseQty }) => {
+export const Cart = ({ CartItem, setCartItem, addToCart, decreaseQty }) => {
   const totalPrice = CartItem.reduce(
     (price, item) => price + item.qty * item.price,
     0,
   );
+
+  const removeFromCart = (item) => {
+    setCartItem(CartItem.filter((i) => i !== item));
+  };
+
   return (
     <>
       <section className="cart-items">
@@ -33,7 +38,7 @@ export const Cart = ({ CartItem, addToCart, decreaseQty }) => {
                   <div className="cart-items-function">
                     <div className="removeCart">
                       <button className="removeCart">
-                        <AiOutlineClose />
+                        <AiOutlineClose onClick={() => removeFromCart(item)} />
                       </button>
                     </div>
 

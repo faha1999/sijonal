@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaAppStore, FaGooglePlay } from 'react-icons/fa';
 import logo from '../../assets/images/sijonal(seasonal).png';
+import payment from '../../assets/payment.png';
 
 export const Footer = () => {
   return (
@@ -57,8 +58,13 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div style={{ textAlign: 'center', marginTop: '2rem', opacity: '.4' }}>
-          &copy; sijonal.com {new Date().getFullYear()} All right reserved.
+        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+          <div>
+            <img src={payment} alt="payment" />
+          </div>
+          <p style={{ marginTop: '1rem', opacity: '.4' }}>
+            &copy; sijonal.com {new Date().getFullYear()} All right reserved.
+          </p>
         </div>
       </footer>
     </>
