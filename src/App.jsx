@@ -7,6 +7,7 @@ import { Cart } from './Common/cart/Cart';
 import { shopData } from './data/shopData';
 import { Footer } from './Common/footer/Footer';
 import { Contact } from './pages/Contact';
+import { TrackMyOrder } from './pages/TrackMyOrder';
 
 export const App = () => {
   const { flashData } = Data;
@@ -74,6 +75,7 @@ export const App = () => {
           />
 
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/track-my-order" element={<TrackMyOrder />} />
         </Routes>
         <Footer />
       </BrowserRouter>
