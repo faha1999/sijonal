@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { CgTrack } from 'react-icons/cg';
+import { MyOrderDetails } from '../components/MyOrderDetails/MyOrderDetails';
 
 export const TrackMyOrder = () => {
   const [trackingNumber, setTrackingNumber] = useState('');
   const [order, setOrder] = useState({});
   const [error, setError] = useState(null);
+  const [showOrderDetails, setShowOrderDetails] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -61,7 +63,9 @@ export const TrackMyOrder = () => {
                 Delivery Carrier: <span>{order.deliveryInfo.carrier}</span>
               </p>
 
-              <button>See details</button>
+              <button onClick={() => setShowOrderDetails(!showOrderDetails)}>
+                See details
+              </button>
             </div>
           )}
 
@@ -77,18 +81,22 @@ export const TrackMyOrder = () => {
               Delivery Carrier: <span>hvbhsz</span>
             </p>
 
-            <button>See details</button>
+            <button onClick={() => setShowOrderDetails(!showOrderDetails)}>
+              See details
+            </button>
           </div>
         </div>
 
-        <button
+        <div>{showOrderDetails && <MyOrderDetails />}</div>
+
+        {/* <button
           className="contact-btn"
           onClick={() =>
             (window.location.href = 'mailto:customersupport@sijonal.com')
           }
         >
           Contact Customer Support
-        </button>
+        </button> */}
       </div>
     </>
   );
