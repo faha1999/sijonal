@@ -86,3 +86,21 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .trackMyOrder {
+    .search-box {
+      width: 100%;
+
+      svg {
+        width: 10%;
+        margin: 0.123rem 0.45rem;
+        font-size: 3.0625rem;
+        color: #808080;
+      }
+    }
+    .tracking-status-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

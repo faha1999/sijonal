@@ -64,7 +64,7 @@ export const TrackMyOrder = () => {
               </p>
 
               <button onClick={() => setShowOrderDetails(!showOrderDetails)}>
-                See details
+                {showOrderDetails ? 'Hide details' : 'See details'}
               </button>
             </div>
           )}
@@ -82,7 +82,7 @@ export const TrackMyOrder = () => {
             </p>
 
             <button onClick={() => setShowOrderDetails(!showOrderDetails)}>
-              See details
+              {showOrderDetails ? 'Hide details' : 'See details'}
             </button>
           </div>
         </div>
