@@ -36,7 +36,7 @@ export const Navlink = () => {
             <Link to="/vendor">vendor account</Link>
           </li>
           <li>
-            <Link to="/track">track my order</Link>
+            <Link to="/track-my-order">track my order</Link>
           </li>
           <li>
             <Link to="/contact-us">contact</Link>
