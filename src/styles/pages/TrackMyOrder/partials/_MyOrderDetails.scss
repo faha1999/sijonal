@@ -1,4 +1,6 @@
 .MyOrderDetails {
+  padding-bottom: 1rem;
+
   .d_grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -8,8 +10,12 @@
       justify-content: flex-start;
     }
 
-    .steps .step {
+    .step {
       margin-bottom: 2rem;
+
+      &:last-child .step-icon-wrap::before {
+        display: none;
+      }
 
       .step-icon-wrap {
         position: relative;
@@ -69,6 +75,9 @@
   }
 
   .customer_info {
+    .title {
+      margin-bottom: 1rem;
+    }
     .track_id,
     .name,
     .area {
@@ -86,6 +95,20 @@
       .tracking_details {
         margin-bottom: 1rem;
       }
+
+      .steps {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .MyOrderDetails {
+    .d_grid {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
     }
   }
 }

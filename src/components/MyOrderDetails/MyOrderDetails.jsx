@@ -15,41 +15,51 @@ export const MyOrderDetails = () => {
 
         <div className="tracking_details">
           <div className="steps">
-            <div class="step completed">
-              <div class="step-icon-wrap d_flex">
-                <div class="step-icon">
+            <div className="step completed">
+              <div className="step-icon-wrap d_flex">
+                <div className="step-icon">
                   <BsCheckLg />
                 </div>
-                <h4 class="step-title">Confirmed delivery</h4>
+                <h4 className="step-title">Confirmed delivery</h4>
               </div>
 
-              <h4 class="step-date">Dec. 19th , 2023, 5:30pm</h4>
+              <h4 className="step-date">Dec. 19th , 2023, 5:30pm</h4>
             </div>
 
-            <div class="step completed">
-              <div class="step-icon-wrap d_flex">
-                <div class="step-icon">
+            <div className="step completed">
+              <div className="step-icon-wrap d_flex">
+                <div className="step-icon">
                   <BsCheckLg />
                 </div>
-                <h4 class="step-title">Confirmed Order</h4>
+                <h4 className="step-title">Confirmed Order</h4>
               </div>
-              <h4 class="step-date">Dec. 19th , 2023, 5:30pm</h4>
+              <h4 className="step-date">Dec. 19th , 2023, 5:30pm</h4>
             </div>
 
-            <div class="step">
-              <div class="step-icon-wrap d_flex">
-                <div class="step-icon">
+            <div className="step">
+              <div className="step-icon-wrap d_flex">
+                <div className="step-icon">
                   <BsCheckLg />
                 </div>
-                <h4 class="step-title">QC checking</h4>
+                <h4 className="step-title">QC checking</h4>
               </div>
-              <h4 class="step-date">Dec. 19th , 2023, 5:30pm</h4>
+              <h4 className="step-date">Dec. 19th , 2023, 5:30pm</h4>
+            </div>
+
+            <div className="step">
+              <div className="step-icon-wrap d_flex">
+                <div className="step-icon">
+                  <BsCheckLg />
+                </div>
+                <h4 className="step-title">Transfer to delivery hub</h4>
+              </div>
+              <h4 className="step-date">Dec. 19th , 2023, 5:30pm</h4>
             </div>
           </div>
         </div>
 
         <div className="customer_info">
-          <h3>Customer and order info</h3>
+          <h3 className="title">Customer and order info</h3>
 
           <div className="track_id">
             <h3 className="thin">Tracking ID</h3>
