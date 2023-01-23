@@ -25,6 +25,12 @@ export const Cart = ({ CartItem, setCartItem, addToCart, decreaseQty }) => {
 
               return (
                 <div className="cart-list product d_flex" key={item.id}>
+                  <div className="removeCart d-sm-block">
+                    <button className="removeCart">
+                      <AiOutlineClose onClick={() => removeFromCart(item)} />
+                    </button>
+                  </div>
+
                   <div className="img">
                     <img src={item.cover} alt={item.name} />
                   </div>
@@ -36,7 +42,7 @@ export const Cart = ({ CartItem, setCartItem, addToCart, decreaseQty }) => {
                     </h4>
                   </div>
                   <div className="cart-items-function">
-                    <div className="removeCart">
+                    <div className="removeCart d-sm-none">
                       <button className="removeCart">
                         <AiOutlineClose onClick={() => removeFromCart(item)} />
                       </button>

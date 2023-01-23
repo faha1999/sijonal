@@ -102,3 +102,34 @@
     height: 8.125rem;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .cart-items {
+    .d_flex {
+      flex-direction: column;
+
+      div {
+        width: 100%;
+      }
+    }
+    .cart-total {
+      margin-left: 0;
+    }
+
+    .removeCart {
+      top: 1rem;
+    }
+
+    .cart-items-function {
+      .d_flex {
+        flex-direction: row !important;
+      }
+    }
+
+    .cart-details {
+      .product {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
