@@ -27,7 +27,7 @@ export const Search = ({ CartItem }) => {
             <span>Categories</span>
           </div>
 
-          <div className="icon f_flex width d-sm-none">
+          <div className="icon f_flex width icon-d-sm-none">
             <div className="icon-circle">
               <FaUserAlt />
             </div>
