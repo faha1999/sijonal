@@ -14,7 +14,7 @@ export const Cart = ({ CartItem, setCartItem, addToCart, decreaseQty }) => {
   return (
     <>
       <section className="cart-items">
-        <div className="container d_flex">
+        <div className="container d_flex d_flex_sm">
           <div className="cart-details">
             {CartItem.length === 0 && (
               <h1 className="no-items product">No Items are add in Cart</h1>
@@ -77,6 +77,12 @@ export const Cart = ({ CartItem, setCartItem, addToCart, decreaseQty }) => {
               <h4>Total Price :</h4>
               <h3>${totalPrice}.00</h3>
             </div>
+
+            {CartItem.length > 0 && (
+              <div className="checkOut">
+                <button>Check out</button>
+              </div>
+            )}
           </div>
         </div>
       </section>

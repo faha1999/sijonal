@@ -35,16 +35,16 @@
       color: $gray;
     }
 
-    .product {
-      height: auto; // need to remove after edit images
-    }
+    // .product {
+    //   height: auto; // need to remove after edit images
+    // }
   }
 
   .cart-total {
     width: 30%;
     margin-top: 1.875rem;
     margin-left: 1.875rem;
-    height: 8.125rem !important;
+    max-height: 12.125rem !important;
 
     h4 {
       font-size: 0.9375rem;
@@ -61,6 +61,21 @@
       border-bottom: 0.0625rem solid rgb(3 0 71 / 9%);
       padding-bottom: 0.625rem;
       color: $orange;
+    }
+
+    .checkOut {
+      margin-top: 1rem;
+      text-align: center;
+
+      button {
+        background: $orange;
+        padding: 0.5rem 0;
+        border-radius: 0.225rem;
+        color: $white;
+        font-weight: 700;
+        font-size: 1.125rem;
+        width: 100%;
+      }
     }
   }
 
@@ -99,12 +114,14 @@
     color: $orange;
     font-size: 1.125rem;
     margin-top: 1.875rem;
-    height: 8.125rem;
   }
 }
 
 @media screen and (max-width: 767px) {
   .cart-items {
+    .d_flex_sm {
+      flex-direction: column-reverse !important;
+    }
     .d_flex {
       flex-direction: column;
 
@@ -114,6 +131,7 @@
     }
     .cart-total {
       margin-left: 0;
+      max-height: 13.125rem !important;
     }
 
     .removeCart {
