@@ -1,17 +1,13 @@
 import React from 'react';
 import { Steps } from './partials/Steps';
+import { TrackingID } from './partials/TrackingID';
 
 export const MyOrderDetails = () => {
   return (
     <div className="MyOrderDetails">
       <h1>Track my parcel</h1>
       <div className="d_grid">
-        <div className="tracking_id">
-          <h3 className="thin">Tracking ID</h3>
-          <h3>
-            <strong>642654812519</strong>
-          </h3>
-        </div>
+        <TrackingID />
 
         <div className="tracking_details">
           <Steps />

@@ -5,6 +5,16 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .tracking_id {
+    div {
+      margin-bottom: 0.5rem;
+
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
   .tracking_details {
     .d_flex {
       justify-content: flex-start;
@@ -90,10 +100,30 @@
           font-weight: 100 !important;
         }
       }
+
+      &.issue {
+        color: red;
+
+        svg {
+          color: red;
+        }
+
+        img {
+          width: 5rem;
+        }
+
+        h4 {
+          font-weight: 100 !important;
+        }
+      }
     }
   }
 
   .customer_info {
+    h3 {
+      font-size: 1.1rem;
+    }
+
     .title {
       margin-bottom: 1rem;
     }
