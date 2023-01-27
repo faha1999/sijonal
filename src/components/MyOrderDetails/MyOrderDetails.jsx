@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsCheckLg } from 'react-icons/bs';
+import { Steps } from './partials/Steps';
 
 export const MyOrderDetails = () => {
   return (
@@ -14,48 +14,7 @@ export const MyOrderDetails = () => {
         </div>
 
         <div className="tracking_details">
-          <div className="steps">
-            <div className="step completed">
-              <div className="step-icon-wrap d_flex">
-                <div className="step-icon">
-                  <BsCheckLg />
-                </div>
-                <h4 className="step-title">Confirmed delivery</h4>
-              </div>
-
-              <h4 className="step-date">Dec. 19th , 2023, 5:30pm</h4>
-            </div>
-
-            <div className="step completed">
-              <div className="step-icon-wrap d_flex">
-                <div className="step-icon">
-                  <BsCheckLg />
-                </div>
-                <h4 className="step-title">Confirmed Order</h4>
-              </div>
-              <h4 className="step-date">Dec. 19th , 2023, 5:30pm</h4>
-            </div>
-
-            <div className="step">
-              <div className="step-icon-wrap d_flex">
-                <div className="step-icon">
-                  <BsCheckLg />
-                </div>
-                <h4 className="step-title">QC checking</h4>
-              </div>
-              <h4 className="step-date">Dec. 19th , 2023, 5:30pm</h4>
-            </div>
-
-            <div className="step">
-              <div className="step-icon-wrap d_flex">
-                <div className="step-icon">
-                  <BsCheckLg />
-                </div>
-                <h4 className="step-title">Transfer to delivery hub</h4>
-              </div>
-              <h4 className="step-date">Dec. 19th , 2023, 5:30pm</h4>
-            </div>
-          </div>
+          <Steps />
         </div>
 
         <div className="customer_info">

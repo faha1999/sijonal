@@ -11,7 +11,8 @@
     }
 
     .step {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      align-items: center;
 
       &:last-child .step-icon-wrap::before {
         display: none;
@@ -26,16 +27,16 @@
           display: block;
           position: absolute;
           top: 50%;
-          width: 0.25rem;
-          height: 5rem;
+          width: 0.125rem;
+          height: 4rem;
           margin-top: -0.0625rem;
-          background-color: #e1e7ec;
+          background-color: $black;
           content: '';
           z-index: 1;
         }
 
         &::before {
-          left: 0.9rem;
+          left: 1rem;
         }
 
         .step-icon {
@@ -57,19 +58,37 @@
         }
       }
 
-      .step-date {
-        margin-left: 2.9rem;
-        font-weight: 100;
+      .date {
+        width: 7rem;
+
+        h4 {
+          font-weight: 500;
+          text-align: center;
+          font-size: 0.875rem;
+        }
       }
 
       &.completed .step-icon-wrap::before {
-        background-color: $orange;
+        background-color: $black;
       }
 
       &.completed .step-icon {
         border-color: $orange;
         background-color: $orange;
         color: #fff;
+      }
+
+      &.complete {
+        color: $gray;
+
+        .step-icon {
+          background: $white;
+          border: none;
+        }
+
+        h4 {
+          font-weight: 100 !important;
+        }
       }
     }
   }
