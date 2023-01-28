@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 export const Cart = ({ CartItem, setCartItem, addToCart, decreaseQty }) => {
   const totalPrice = CartItem.reduce(
@@ -80,7 +81,9 @@ export const Cart = ({ CartItem, setCartItem, addToCart, decreaseQty }) => {
 
             {CartItem.length > 0 && (
               <div className="checkOut">
-                <button>Check out</button>
+                <Link to="/checkout">
+                  <button>Check out</button>
+                </Link>
               </div>
             )}
           </div>

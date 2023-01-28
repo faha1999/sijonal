@@ -1,0 +1,42 @@
+.checkOut {
+  .clientInfo {
+    width: 70%;
+
+    .cardDate {
+      gap: 1rem;
+    }
+
+    form {
+      margin-bottom: 1rem;
+      input,
+      .select {
+        border: 0.0625rem solid $gray;
+        border-radius: 0.225rem;
+        padding: 0.125rem 0.5rem;
+        width: 100%;
+      }
+
+      .address {
+        width: 207%;
+      }
+
+      .dc_flex {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .select {
+        width: 17.3rem;
+        background: $white;
+      }
+
+      li {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .currentCart {
+    width: 28%;
+  }
+}
