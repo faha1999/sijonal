@@ -1,9 +1,21 @@
 .checkOut {
+  padding: 1rem 0;
+
   .clientInfo {
     width: 70%;
+    margin-bottom: 1rem;
 
     .cardDate {
       gap: 1rem;
+    }
+
+    .checkoutButton {
+      padding: 0.5rem 0;
+      width: 17.3rem;
+      border-radius: 0.225rem;
+      background: $orange;
+      color: $white;
+      font-size: 1rem;
     }
 
     form {
@@ -30,8 +42,16 @@
         background: $white;
       }
 
-      li {
-        cursor: pointer;
+      ul {
+        position: absolute;
+        background: $offWhite;
+        width: 17.3rem;
+        margin-top: 1.5rem;
+        padding: 1rem;
+
+        li {
+          cursor: pointer;
+        }
       }
     }
   }
