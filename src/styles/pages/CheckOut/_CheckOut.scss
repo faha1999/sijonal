@@ -1,5 +1,9 @@
-.checkOut {
+.checkOutSection {
   padding: 1rem 0;
+
+  h3 {
+    padding-bottom: 1rem;
+  }
 
   .clientInfo {
     width: 70%;
@@ -59,4 +63,32 @@
   .currentCart {
     width: 28%;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .checkOutSection {
+    .d_flex {
+      flex-direction: column;
+
+      div {
+        width: 100% !important;
+      }
+
+      .clientInfo {
+        form {
+          div {
+            padding-bottom: 1rem;
+          }
+
+          .address {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+@media screen and (min-width: 1024px) {
 }
