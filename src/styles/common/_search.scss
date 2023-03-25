@@ -6,7 +6,7 @@
   }
 
   &.active {
-    height: 12vh;
+    height: 8vh;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -73,6 +73,9 @@
 
 @media screen and (max-width: 767px) {
   .search {
+    &.active {
+      height: 16vh;
+    }
     .icon-d-sm-none {
       display: none;
     }
@@ -92,6 +95,9 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .search {
+    &.active {
+      height: 9vh;
+    }
     .search-box {
       width: 70%;
 

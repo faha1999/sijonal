@@ -12,8 +12,9 @@ export const MobileHeader = ({ CartItem }) => {
       <div className="mobileNav">
         <Navlink />
 
-        <FaUserAlt />
-
+        <Link to="/user">
+          <FaUserAlt />
+        </Link>
         <Link to="/">
           <TiHome />
         </Link>

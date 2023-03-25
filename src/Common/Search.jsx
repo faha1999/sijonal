@@ -6,10 +6,10 @@ import { FaUserAlt } from 'react-icons/fa';
 import { HiShoppingBag } from 'react-icons/hi';
 
 export const Search = ({ CartItem }) => {
-  // window.addEventListener('scroll', function () {
-  //   const search = document.querySelector('.search');
-  //   search.classList.toggle('active', window.scrollY > 100);
-  // });
+  window.addEventListener('scroll', function () {
+    const search = document.querySelector('.search');
+    search.classList.toggle('active', window.scrollY > 100);
+  });
 
   return (
     <>
@@ -29,7 +29,9 @@ export const Search = ({ CartItem }) => {
 
           <div className="icon f_flex width icon-d-sm-none">
             <div className="icon-circle">
-              <FaUserAlt />
+              <Link to="/user">
+                <FaUserAlt />
+              </Link>
             </div>
             <div className="cart">
               <Link to="/cart">
