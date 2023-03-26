@@ -79,7 +79,17 @@ export const App = () => {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/user" element={<User />} />
           <Route path="/track-my-order" element={<TrackMyOrder />} />
-          <Route path="/checkout" element={<CheckOut />} />
+          <Route
+            path="/checkout"
+            element={
+              <CheckOut
+                CartItem={CartItem}
+                addToCart={addToCart}
+                decreaseQty={decreaseQty}
+                setCartItem={setCartItem}
+              />
+            }
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

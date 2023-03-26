@@ -65,6 +65,65 @@
   }
 }
 
+.currentCurtItems {
+  background: $offWhite;
+  border-radius: 0.25rem;
+
+  .product {
+    background: none;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+    border-bottom: 0.0625rem solid #dfdcdc;
+    padding: 1rem;
+
+    img {
+      width: 5rem;
+    }
+
+    .cart-details {
+      h3 {
+        font-size: 1rem;
+      }
+
+      h4 {
+        font-size: 0.8rem;
+
+        span {
+          color: $orange;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+    .cart-items-function {
+      button {
+        background: transparent;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0.125rem;
+
+        svg {
+          padding: 0.01rem;
+        }
+      }
+      .removeCart {
+        text-align: right;
+        margin-right: -0.525rem;
+        color: $orange;
+      }
+
+      .cartControl {
+        margin-top: 0.8rem;
+        margin-right: -1.525rem;
+      }
+    }
+  }
+
+  .totalPrice {
+    padding: 1rem 1rem 0 1rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .checkOutSection {
     .d_flex {

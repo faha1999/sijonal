@@ -2,12 +2,17 @@ import React from 'react';
 import { CustomerInfo } from '../components/checkOutDetails/CeckoutInfo/CustomerInfo';
 import { CurrentCart } from '../components/checkOutDetails/CurrentCart/CurrentCart';
 
-export const CheckOut = () => {
+export const CheckOut = ({ CartItem, setCartItem, addToCart, decreaseQty }) => {
   return (
     <section className="container checkOutSection">
       <div className="d_flex">
         <CustomerInfo />
-        <CurrentCart />
+        <CurrentCart
+          CartItem={CartItem}
+          addToCart={addToCart}
+          decreaseQty={decreaseQty}
+          setCartItem={setCartItem}
+        />
       </div>
     </section>
   );
