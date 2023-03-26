@@ -10,6 +10,7 @@ import { Contact } from './pages/Contact';
 import { TrackMyOrder } from './pages/TrackMyOrder';
 import { CheckOut } from './pages/CheckOut';
 import { User } from './pages/User';
+import { Watch } from './productDetails/watch/Watch';
 
 export const App = () => {
   const { flashData } = Data;
@@ -90,7 +91,19 @@ export const App = () => {
               />
             }
           />
+
+          <Route
+            path="/watch"
+            element={
+              <Watch
+                addToCart={addToCart}
+                decreaseQty={decreaseQty}
+                setCartItem={setCartItem}
+              />
+            }
+          />
         </Routes>
+
         <Footer />
       </BrowserRouter>
     </>
