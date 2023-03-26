@@ -15,7 +15,7 @@
 
     .checkoutButton {
       padding: 0.5rem 0;
-      width: 17.3rem;
+      width: 100%;
       border-radius: 0.225rem;
       background: $orange;
       color: $white;
@@ -127,9 +127,10 @@
 @media screen and (max-width: 767px) {
   .checkOutSection {
     .d_flex {
-      flex-direction: column;
+      flex-direction: column-reverse;
 
-      div {
+      .clientInfo,
+      .currentCart {
         width: 100% !important;
       }
 
@@ -146,8 +147,62 @@
       }
     }
   }
+
+  .currentCurtItems {
+    .product {
+      flex-direction: row;
+
+      .cart-items-function {
+        .cartControl {
+          flex-direction: row;
+        }
+      }
+    }
+
+    .totalPrice {
+      flex-direction: row;
+    }
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .checkOutSection {
+    .d_flex {
+      flex-direction: column-reverse;
+
+      .clientInfo,
+      .currentCart {
+        width: 100% !important;
+      }
+
+      .clientInfo {
+        form {
+          div {
+            padding-bottom: 1rem;
+          }
+
+          .address {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .currentCurtItems {
+    .product {
+      flex-direction: row;
+
+      .cart-items-function {
+        .cartControl {
+          flex-direction: row;
+        }
+      }
+    }
+
+    .totalPrice {
+      flex-direction: row;
+    }
+  }
 }
 @media screen and (min-width: 1024px) {
 }

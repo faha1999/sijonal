@@ -24,12 +24,6 @@ export const CurrentCart = ({
 
           return (
             <div className="cart-list product d_flex" key={item.id}>
-              <div className="removeCart d-sm-block">
-                <button className="removeCart">
-                  <AiOutlineClose onClick={() => removeFromCart(item)} />
-                </button>
-              </div>
-
               <div className="img">
                 <img src={item.cover} alt={item.name} />
               </div>
@@ -41,7 +35,7 @@ export const CurrentCart = ({
                 </h4>
               </div>
               <div className="cart-items-function">
-                <div className="removeCart d-sm-none">
+                <div className="removeCart">
                   <button className="removeCart">
                     <AiOutlineClose onClick={() => removeFromCart(item)} />
                   </button>
