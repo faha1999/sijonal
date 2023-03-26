@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { BsChevronDown } from 'react-icons/bs';
 import { FaBars, FaBorderAll } from 'react-icons/fa';
 import { GrClose } from 'react-icons/gr';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { MobileHeader } from './header/MobileHeader';
 
 export const Navbar = ({ CartItem }) => {
+  const location = useLocation();
+
   const [MobileMenu, setMobileMenu] = useState(false);
   return (
     <>
@@ -16,7 +18,9 @@ export const Navbar = ({ CartItem }) => {
               <FaBorderAll />
             </span>
             <h4>
-              Categories <BsChevronDown />
+              <Link to="/">
+                Categories <BsChevronDown />
+              </Link>
             </h4>
           </div>
 
@@ -28,22 +32,58 @@ export const Navbar = ({ CartItem }) => {
               onClick={() => setMobileMenu(false)}
             >
               <li>
-                <Link to="/">home</Link>
+                <Link
+                  to="/"
+                  className={location.pathname === '/' ? 'activePage' : ''}
+                >
+                  home
+                </Link>
               </li>
               <li>
-                <Link to="/pages">pages</Link>
+                <Link
+                  to="/pages"
+                  className={location.pathname === '/pages' ? 'activePage' : ''}
+                >
+                  pages
+                </Link>
               </li>
               <li>
-                <Link to="/user">user account</Link>
+                <Link
+                  to="/user"
+                  className={location.pathname === '/user' ? 'activePage' : ''}
+                >
+                  user account
+                </Link>
               </li>
               <li>
-                <Link to="/vendor">vendor account</Link>
+                <Link
+                  to="/vendor"
+                  className={
+                    location.pathname === '/vendor' ? 'activePage' : ''
+                  }
+                >
+                  vendor account
+                </Link>
               </li>
               <li>
-                <Link to="/track-my-order">track my order</Link>
+                <Link
+                  to="/track-my-order"
+                  className={
+                    location.pathname === '/track-my-order' ? 'activePage' : ''
+                  }
+                >
+                  track my order
+                </Link>
               </li>
               <li>
-                <Link to="/contact-us">contact</Link>
+                <Link
+                  to="/contact-us"
+                  className={
+                    location.pathname === '/contact-us' ? 'activePage' : ''
+                  }
+                >
+                  contact
+                </Link>
               </li>
             </ul>
 
