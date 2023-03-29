@@ -53,10 +53,6 @@
       cursor: pointer;
       width: 12.5rem;
       transition: 0.2s ease-in-out;
-
-      &:hover {
-        background-color: $orange;
-      }
     }
 
     .active {

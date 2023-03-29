@@ -1,12 +1,15 @@
 import React from 'react';
 import aboutUs from '../assets/contact/about-us.png';
 import blog4 from '../assets/contact/blog-4.jpg';
+import { PageTitle } from '../Common/pageTitle/PageTitle';
 import { Categories } from '../components/home/partials/Categories';
 import { contactData } from '../data/contactData';
 
 export const Contact = () => {
   return (
     <section className="contact">
+      <PageTitle title="Contact us" />
+
       <div className="container">
         <div className="f_flex">
           <Categories />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import { PageTitle } from '../pageTitle/PageTitle';
 
 export const Cart = ({ CartItem, setCartItem, addToCart, decreaseQty }) => {
   const totalPrice = CartItem.reduce(
@@ -15,6 +16,8 @@ export const Cart = ({ CartItem, setCartItem, addToCart, decreaseQty }) => {
   return (
     <>
       <section className="cart-items">
+        <PageTitle title="My cart" />
+
         <div className="container d_flex d_flex_sm">
           <div className="cart-details">
             {CartItem.length === 0 && (

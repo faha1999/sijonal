@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { CgTrack } from 'react-icons/cg';
 import { MyOrderDetails } from '../components/MyOrderDetails/MyOrderDetails';
+import { PageTitle } from '../Common/pageTitle/PageTitle';
 
 export const TrackMyOrder = () => {
   const [trackingNumber, setTrackingNumber] = useState('');
@@ -19,6 +20,8 @@ export const TrackMyOrder = () => {
   return (
     <>
       <div className="trackMyOrder container">
+        <PageTitle title="Track my order" />
+
         <h1>Track My Order</h1>
         <form className="search-box" onSubmit={handleSubmit}>
           <CgTrack />

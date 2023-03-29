@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { PageTitle } from '../../Common/pageTitle/PageTitle';
 
 export const Watch = ({ watchImg, watchDetails, addToCart }) => {
   const [currentProductImage, setCurrentProductImage] = useState(0);
+  const { pathname } = useLocation();
 
   return (
     <>
-      <main className="productDetails">
+      <section className="productDetails">
+        <PageTitle title="Watch" />
+
         <div className="container-md grid product-container">
           <div className="flex product-image">
             <img src={watchImg[currentProductImage].png} alt="products img" />
@@ -30,6 +35,10 @@ export const Watch = ({ watchImg, watchDetails, addToCart }) => {
             </div>
           </div>
           <div className="product-description flow">
+            <span className="pathName">
+              <a href="/">Home</a> {pathname}
+            </span>
+
             {watchDetails.map((watchDetails) => (
               <div key={watchDetails.name}>
                 <h1 className="">{watchDetails.name}</h1>
@@ -51,7 +60,7 @@ export const Watch = ({ watchImg, watchDetails, addToCart }) => {
             ))}
           </div>
         </div>
-      </main>
+      </section>
     </>
   );
 };

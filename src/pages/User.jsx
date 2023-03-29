@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { LogIn } from '../Common/logIn/LogIn';
 import { SignUp } from '../Common/logIn/SignUp';
+import { PageTitle } from '../Common/pageTitle/PageTitle';
 
 export const User = () => {
   const [showLogin, setShowLogin] = useState(true);
@@ -15,6 +16,8 @@ export const User = () => {
   return (
     <>
       <section className="userAccount">
+        <PageTitle title="User" />
+
         <div className="container">
           <div className="f_flex contact-column">
             <div className="login-signup-buttons">

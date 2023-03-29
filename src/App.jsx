@@ -12,6 +12,7 @@ import { CheckOut } from './pages/CheckOut';
 import { User } from './pages/User';
 import { Watch } from './productDetails/watch/Watch';
 import { watchDetails, watchImg } from './data/productsDetails/watchDetails';
+import { PageTitle } from './Common/pageTitle/PageTitle';
 
 export const App = () => {
   const { flashData } = Data;
@@ -53,6 +54,7 @@ export const App = () => {
 
   return (
     <>
+      <PageTitle title="sijonal - the best online shop in Bangladesh." />
       <BrowserRouter>
         <Header CartItem={CartItem} />
         <Routes>
