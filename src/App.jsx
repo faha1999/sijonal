@@ -11,6 +11,7 @@ import { TrackMyOrder } from './pages/TrackMyOrder';
 import { CheckOut } from './pages/CheckOut';
 import { User } from './pages/User';
 import { Watch } from './productDetails/watch/Watch';
+import { watchDetails, watchImg } from './data/productsDetails/watchDetails';
 
 export const App = () => {
   const { flashData } = Data;
@@ -96,9 +97,9 @@ export const App = () => {
             path="/watch"
             element={
               <Watch
+                watchImg={watchImg}
+                watchDetails={watchDetails}
                 addToCart={addToCart}
-                decreaseQty={decreaseQty}
-                setCartItem={setCartItem}
               />
             }
           />
