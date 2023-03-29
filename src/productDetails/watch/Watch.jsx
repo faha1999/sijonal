@@ -11,10 +11,14 @@ export const Watch = ({ watchImg, watchDetails, addToCart }) => {
       <section className="productDetails">
         <PageTitle title="Watch" />
 
-        <div className="container-md grid product-container">
-          <div className="flex product-image">
-            <img src={watchImg[currentProductImage].png} alt="products img" />
-            <div className="thumbnail-wrapper flex">
+        <div className="product-container">
+          <div className="product-image">
+            <img
+              src={watchImg[currentProductImage].png}
+              alt="products img"
+              className="mainImg"
+            />
+            <div className="thumbnail-wrapper">
               <div className="thumbnail">
                 <img
                   onClick={() => setCurrentProductImage(0)}
@@ -34,7 +38,8 @@ export const Watch = ({ watchImg, watchDetails, addToCart }) => {
               </div>
             </div>
           </div>
-          <div className="product-description flow">
+
+          <div className="product-description">
             <span className="pathName">
               <a href="/">Home</a> {pathname}
             </span>

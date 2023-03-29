@@ -1,14 +1,17 @@
 .productDetails {
   margin-top: 1.625rem;
+  height: 33rem !important;
 
   .product-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.8125rem;
+    display: flex;
+    flex-direction: row;
 
     .product-image {
-      flex-direction: column;
-      gap: 2rem;
-      align-items: center;
+      text-align: center;
+
+      .mainImg {
+        height: 50%;
+      }
 
       img {
         cursor: pointer;
@@ -16,14 +19,16 @@
       }
 
       .thumbnail-wrapper {
-        align-items: center;
+        display: flex;
         gap: 2rem;
+        justify-content: center;
       }
     }
 
     .product-description {
       padding-block: 3.875rem;
       margin-top: 1.5rem;
+      padding-right: 1rem;
 
       .pathName {
         color: $gray;
@@ -76,116 +81,36 @@
   }
 }
 
-.container-lg {
-  width: 100%;
-  margin-inline: auto;
-}
-
-.container-md {
-  width: 100%;
-  margin-inline: auto;
-}
-
-.flex {
-  display: flex;
-  gap: 1rem;
-}
-
-.grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.flow > * + * {
-  margin-top: 1.5rem;
-}
-
-.m-auto {
-  margin: auto;
-}
-
-.d-inline-block {
-  display: inline-block;
-}
-
 .position-relative {
   position: relative;
 }
 
-@media (max-width: 64em) {
+@media screen and (max-width: 767px) {
   .productDetails {
-    margin-top: 3rem;
-
+    height: auto !important;
     .product-container {
-      padding-inline: 2rem;
-      gap: 2rem;
+      flex-direction: column;
 
       .product-image {
-        .thumbnail-wrapper {
-          justify-content: center;
+        .mainImg {
+          width: 100%;
         }
       }
 
       .product-description {
-        padding-block: 2rem;
+        padding-left: 1rem;
 
-        .action-wrapper {
-          flex-direction: column;
-          align-items: stretch;
-
-          .product-quantity {
-            justify-content: center;
-          }
+        .action-wrapper button {
+          width: 100%;
         }
       }
     }
   }
 }
-
-@media (max-width: 48em) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .productDetails {
-    margin-top: 0;
-
-    .product-container {
-      grid-template-columns: 1fr;
-      padding: 0;
-
-      .product-image {
-        position: relative;
-
-        img {
-          cursor: none;
-          border-radius: 0;
-        }
-
-        .lightbox-control {
-          width: 40px;
-        }
-
-        .control-prev {
-          top: 50%;
-          left: 5%;
-        }
-
-        .control-next {
-          top: 50%;
-          right: 5%;
-        }
-
-        .thumbnail-wrapper {
-          display: none;
-        }
-      }
-
-      .product-description {
-        padding-inline: 1.5rem;
-
-        .product-price {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
-      }
+    .product-image {
+      width: 50%;
     }
   }
 }
