@@ -13,6 +13,7 @@ import { User } from './pages/User';
 import { Watch } from './productDetails/watch/Watch';
 import { watchDetails, watchImg } from './data/productsDetails/watchDetails';
 import { PageTitle } from './Common/pageTitle/PageTitle';
+import { Whatsapp } from './Common/Whatsapp';
 
 export const App = () => {
   const { flashData } = Data;
@@ -57,6 +58,8 @@ export const App = () => {
       <PageTitle title="sijonal - the best online shop in Bangladesh." />
       <BrowserRouter>
         <Header CartItem={CartItem} />
+        <Whatsapp />
+
         <Routes>
           <Route
             path="/"

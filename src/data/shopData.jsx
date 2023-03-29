@@ -13,7 +13,7 @@ export const shopData = {
     {
       id: 7,
       cover: shops1,
-      name: 'Mapple Earphones',
+      name: 'Apple Earphones',
       price: '180',
       discount: '25',
     },

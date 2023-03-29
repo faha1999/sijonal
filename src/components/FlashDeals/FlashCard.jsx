@@ -40,35 +40,35 @@ export const FlashCard = ({ flashData, addToCart }) => {
       >
         {flashData.map((flashData) => (
           <SwiperSlide className="box" key={flashData.id}>
-            <Link to="/watch">
-              <div className="product mtop">
-                <div className="img">
-                  <span className="discount">{flashData.discount}% Off</span>
-                  <img src={flashData.cover} alt={flashData.name} />
-                  <div className="product-like">
-                    <label>{count}</label> <br />
-                    <AiFillHeart onClick={increment} />
-                  </div>
-                </div>
-                <div className="product-details">
-                  <h3>{flashData.name}</h3>
-                  <div className="rate">
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
-                  </div>
-                  <div className="price">
-                    <h4>${flashData.price}.00 </h4>
-
-                    <button onClick={() => addToCart(flashData)}>
-                      <AiOutlinePlus />
-                    </button>
-                  </div>
+            <div className="product mtop">
+              <div className="img">
+                <span className="discount">{flashData.discount}% Off</span>
+                <Link to="/watch">
+                  <img src={flashData.cover} alt={flashData.name} />{' '}
+                </Link>
+                <div className="product-like">
+                  <label>{count}</label> <br />
+                  <AiFillHeart onClick={increment} />
                 </div>
               </div>
-            </Link>
+              <div className="product-details">
+                <h3>{flashData.name}</h3>
+                <div className="rate">
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                </div>
+                <div className="price">
+                  <h4>${flashData.price}.00 </h4>
+
+                  <button onClick={() => addToCart(flashData)}>
+                    <AiOutlinePlus />
+                  </button>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
