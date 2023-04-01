@@ -3,6 +3,7 @@
 
   .d_grid {
     grid-template-columns: repeat(3, 1fr);
+    display: grid;
   }
 
   .tracking_id {
