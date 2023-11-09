@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { PageTitle } from '../../Common/pageTitle/PageTitle';
+import { ToastContainer, toast } from 'react-toastify';
 
 export const Watch = ({ watchImg, watchDetails, addToCart }) => {
   const [currentProductImage, setCurrentProductImage] = useState(0);
   const { pathname } = useLocation();
+
+  const handleAddToCart = (shopItems) => {
+    addToCart(shopItems);
+    toast.success('Added to cart', {
+      position: toast.POSITION.BOTTOM_RIGHT,
+    });
+  };
 
   return (
     <>
@@ -55,10 +63,10 @@ export const Watch = ({ watchImg, watchDetails, addToCart }) => {
                 </div>
                 <div className="action-wrapper">
                   <button
-                    onClick={() => addToCart(watchDetails)}
+                    onClick={() => handleAddToCart(watchDetails)}
                     className="btn-primary"
                   >
-                    Add to cart
+                    Add to cart <ToastContainer />
                   </button>
                 </div>
               </div>

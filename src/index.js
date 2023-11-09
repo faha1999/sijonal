@@ -4,6 +4,7 @@ import { App } from './App';
 import './styles/App.scss';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'react-toastify/dist/ReactToastify.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

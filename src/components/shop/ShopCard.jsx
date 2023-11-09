@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
 import { AiFillHeart, AiFillStar, AiOutlinePlus } from 'react-icons/ai';
+import { ToastContainer, toast } from 'react-toastify';
 
 export const ShopCard = ({ shopItems, addToCart }) => {
   const [count, setCount] = useState(0);
   const increment = () => {
     setCount(count + 1);
   };
+
+  const handleAddToCart = (shopItems) => {
+    addToCart(shopItems);
+    toast.success('Added to cart', {
+      position: toast.POSITION.BOTTOM_RIGHT,
+    });
+  };
+
   return (
     <>
       {shopItems.map((shopItems, index) => (
@@ -31,8 +40,9 @@ export const ShopCard = ({ shopItems, addToCart }) => {
               <div className="price">
                 <h4>${shopItems.price}.00 </h4>
 
-                <button onClick={() => addToCart(shopItems)}>
+                <button onClick={() => handleAddToCart(shopItems)}>
                   <AiOutlinePlus />
+                  <ToastContainer />
                 </button>
               </div>
             </div>
